@@ -22,7 +22,7 @@ For the implementation of the idea I have used Djnago framework of python and al
 
 #How to RUN
 
-Download all the files and open them in VSCode and run the command python manage.py runserver in terminal then click on generated link and the webiste will be opened
+Download all the files and open them in VSCode and run the command python manage.py runserver in terminal then click on generated link and the webiste will be opened, in case you are not able to run it on your device or facing technical issues I have also attached a video demo file.
 
 #DEMO LINK
 
