@@ -25,11 +25,11 @@ def present(request):
             # If the ip_address is duplicate, set ip_address to RED
             existing_entry.ip_address = '<span style="color: red;">' + ip_address + '</span>'
             existing_entry.save()
-            Attendance = Present(Roll_No=Roll_No, Password=Password, Date=datetime.today(), ip_address=ip_address)
+            Attendance = Present(Roll_No=Roll_No, Password=Password, Date=datetime.today(), ip_address="RED")
             Attendance.save()
         else:
             # If the ip_address is not duplicate, proceed to save the data
-            Attendance = Present(Roll_No=Roll_No, Password=Password, Date=datetime.today(), ip_address="RED")
+            Attendance = Present(Roll_No=Roll_No, Password=Password, Date=datetime.today(), ip_address=ip_address)
             Attendance.save()
 
     return render(request, 'present.html')
